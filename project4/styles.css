@@ -1,0 +1,340 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Navigation Bar Styles */
+.navbar {
+    background: linear-gradient(120deg, #ff4b2b 0%, #ff416c 100%);
+    color: white;
+    padding: 10px 0; /* Reduced padding for a more compact look */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Reduced shadow for a lighter effect */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.navbar-brand {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu li {
+    display: inline;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-menu a:hover {
+    color: #ffe2e2;
+    transform: scale(1.1);
+}
+
+
+
+/* Home Section with Photo */
+.section-home {
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 180px; 
+    height: 180px; 
+    object-fit: cover; 
+    margin-bottom: 20px;
+    border: 6px solid white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.animate-title {
+    font-size: 4em; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.animate-subtitle {
+    font-size: 1.5em;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #ff6f61;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ff3f34;
+    transform: scale(1.1);
+}
+
+/* Animation Keyframes */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+.animate-subtitle {
+    font-size: 1.5em;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.btn-primary {
+    background-color: #ff6f61;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ff3f34;
+    transform: scale(1.1);
+}
+
+/* About Me Section */
+.section-about {
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    animation: expandLine 1s ease-in-out;
+}
+
+@keyframes expandLine {
+    from { width: 0; }
+    to { width: 50px; }
+}
+
+.section-description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Skills Section */
+.section-skills {
+    background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.skill {
+    background: linear-gradient(120deg, #8e2de2 0%, #4a00e0 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    font-size: 1.2em;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.skills-description {
+    font-size: 1.1em;
+    margin-top: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Career Objective Section */
+.section-objective {
+    background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.section-objective .section-description {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+}
+
+/* Contact Section */
+.section-contact {
+    background: linear-gradient(120deg, #ffecd2 0%, #fcb69f 100%);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact-description {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.animate-input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+.animate-input:focus {
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ff6f61;
+}
+
+.animate-btn {
+    margin-top: 20px;
+    background-color: #ff6f61;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.animate-btn:hover {
+    background-color: #ff3f34;
+    transform: scale(1.05);
+}
+footer{
+    background: lightslategray;
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  footer .text span{
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+  }
+  footer .text span a{
+    font-weight: 500;
+    color: #FFF;
+  }
+  footer{
+    background: rgb(57, 73, 90);
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  footer .text span{
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+  }
+  footer .text span a{
+    font-weight: 500;
+    color: #FFF;
+  }
+  footer .text span a:hover{
+    text-decoration: underline;
+  }
+/* Scroll Animations */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-in-out;
+}
+
+section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Button Hover Effect */
+.btn.hovered {
+    background-color: #145b32;
+    transform: scale(1.05);
+}
